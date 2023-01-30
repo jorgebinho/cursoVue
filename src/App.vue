@@ -1,33 +1,24 @@
 <template>
   <HeaderVue v-show="showHeader"/>
 
-  <div v-show="showName">
-    Nome: {{ firstName }} <br>
-    Sobrenome: {{ lastName }}
-  </div>
-
-  <div v-if="accesLevel === 'adm'">Admin</div>
-  <div v-else-if="accesLevel === 'mkt'">Marketing</div>
-  <div v-else>User</div>
+  <DiretivasCondicionais />
 
 
 </template>
 
 <script>
 import HeaderVue from './components/HeaderVue.vue';
+import DiretivasCondicionais from './components/DiretivasCondicionais.vue';
 
 export default {
     name: 'App',
     components: {
-      HeaderVue
+      HeaderVue,
+      DiretivasCondicionais
     },
     data() {
       return {
-        showHeader: true,
-        showName: true,
-        firstName:  'Jorge',
-        lastName: 'Santos',
-        accesLevel: 'user'
+        showHeader: true
       }
     }
 }
