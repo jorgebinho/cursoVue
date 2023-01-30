@@ -1,8 +1,11 @@
 <template>
-    <h2>Diretivas Loop</h2>
+  <h2>Data Binding</h2>
+  <div>
     <div v-for="(obj, index) in todos" :key="obj.id" class="todos-item">
-        {{ index }} -> {{ obj.title }}
+      <img v-if="obj.imgSrc" :src="obj.imgSrc" :alt="obj.imgAlt"/>
+      {{ index }} -> {{ obj.title }}
     </div>
+  </div>
 </template>
 
 <script>
@@ -15,12 +18,16 @@ export default {
           id: 1,
           title: "delectus aut autem",
           completed: false,
+          imgSrc: 'https://via.placeholder.com/150',
+          imgAlt: 'Aprendendo data binding'
         },
         {
           userId: 1,
           id: 2,
           title: "quis ut nam facilis et officia qui",
           completed: false,
+          imgSrc: 'https://via.placeholder.com/150',
+          imgAlt: 'Todo 2'
         },
         {
           userId: 1,
@@ -49,9 +56,9 @@ export default {
 
 <style>
 .todos-item {
-    background: #000;
-    margin: 0 0 5px 0;
-    padding: 3px 6px;
-    color: #fff
+  background: #000;
+  margin: 0 0 5px 0;
+  padding: 3px 6px;
+  color: #fff;
 }
 </style>

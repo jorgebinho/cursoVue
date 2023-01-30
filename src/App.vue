@@ -3,6 +3,7 @@
 
   <DiretivasCondicionais />
   <DiretivasLoop />
+  <DiretivaBinding />
 
 </template>
 
@@ -10,13 +11,15 @@
 import HeaderVue from './components/HeaderVue.vue';
 import DiretivasCondicionais from './components/DiretivasCondicionais.vue';
 import DiretivasLoop from './components/DiretivasLoop.vue';
+import DiretivaBinding from './components/DiretivaBinding.vue';
 
 export default {
     name: 'App',
     components: {
       HeaderVue,
       DiretivasCondicionais,
-      DiretivasLoop
+      DiretivasLoop,
+      DiretivaBinding
     },
     data() {
       return {
