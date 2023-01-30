@@ -2,19 +2,21 @@
   <HeaderVue v-show="showHeader"/>
 
   <DiretivasCondicionais />
-
+  <DiretivasLoop />
 
 </template>
 
 <script>
 import HeaderVue from './components/HeaderVue.vue';
 import DiretivasCondicionais from './components/DiretivasCondicionais.vue';
+import DiretivasLoop from './components/DiretivasLoop.vue';
 
 export default {
     name: 'App',
     components: {
       HeaderVue,
-      DiretivasCondicionais
+      DiretivasCondicionais,
+      DiretivasLoop
     },
     data() {
       return {
