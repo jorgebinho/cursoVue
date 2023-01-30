@@ -1,9 +1,13 @@
 <template>
   <HeaderVue v-show="showHeader"/>
 
-  <DiretivasCondicionais />
-  <DiretivasLoop />
+  <AtributoClass />
+  <hr>
   <DiretivaBinding />
+  <hr>
+  <DiretivasLoop />
+  <hr>
+  <DiretivasCondicionais />
 
 </template>
 
@@ -12,6 +16,7 @@ import HeaderVue from './components/HeaderVue.vue';
 import DiretivasCondicionais from './components/DiretivasCondicionais.vue';
 import DiretivasLoop from './components/DiretivasLoop.vue';
 import DiretivaBinding from './components/DiretivaBinding.vue';
+import AtributoClass from './components/AtributoClass.vue';
 
 export default {
     name: 'App',
@@ -19,7 +24,8 @@ export default {
       HeaderVue,
       DiretivasCondicionais,
       DiretivasLoop,
-      DiretivaBinding
+      DiretivaBinding,
+      AtributoClass
     },
     data() {
       return {
