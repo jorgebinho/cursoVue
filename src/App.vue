@@ -1,5 +1,15 @@
 <template>
-  <HeaderVue v-show="showHeader"/>
+  <HeaderVue>
+    <template v-slot:title>
+      Home
+    </template>
+
+    <template v-slot:description>
+      <p>Descrição</p>
+    </template>
+
+    Conteúdo adicional do Header...
+  </HeaderVue>
 
   <LifeCycle />
   <hr>

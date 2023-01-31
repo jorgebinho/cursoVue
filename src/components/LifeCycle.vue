@@ -7,7 +7,7 @@
         <li>Desmontagem = Remover tudo que for necessário para liberar memória</li>
 
     </ul>
-    <HeaderVue v-if="showHeader"/>
+    <HeaderVue v-if="showHeader">Life Cycle</HeaderVue>
     <button @click="showHeader = !showHeader">
         Toggle Header
     </button>
