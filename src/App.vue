@@ -11,6 +11,8 @@
     Conteúdo adicional do Header...
   </HeaderVue>
 
+  <BaseCard />
+  <hr>
   <LifeCycle />
   <hr>
   <ObservadoresWatch />
@@ -42,6 +44,7 @@ import EventosVue from './components/EventosVue.vue';
 import ComputedProperties from './components/ComputedProperties.vue';
 import ObservadoresWatch from './components/ObservadoresWatch.vue';
 import LifeCycle from './components/LifeCycle.vue';
+import BaseCard from './components/BaseCard.vue';
 
 export default {
     name: 'App',
@@ -55,7 +58,8 @@ export default {
       EventosVue,
       ComputedProperties,
       ObservadoresWatch,
-      LifeCycle
+      LifeCycle,
+      BaseCard
     },
     data() {
       return {
