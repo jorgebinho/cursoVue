@@ -11,7 +11,9 @@
     Conteúdo adicional do Header...
   </HeaderVue>
 
-  <BaseAlert :variant=variant>Seu formulário foi enviado com sucesso!</BaseAlert>
+  <BaseAlert :variant="variant" @close="onClose()" v-if="showAlert">
+    {{ text }}
+  </BaseAlert>
   <hr>
   <BaseCard />
   <hr>
@@ -69,6 +71,14 @@ export default {
       return {
         showHeader: true,
         variant: "success",
+        text: 'Seu formulário foi enviado!',
+        showAlert: true
+      }
+    },
+    methods: {
+      onClose() {
+        this.showAlert = false
+        console.log('on close');
       }
     }
 }

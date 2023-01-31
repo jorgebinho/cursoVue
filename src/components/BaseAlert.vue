@@ -2,6 +2,10 @@
     <div :class=baseClass>
         {{ test }}
         <slot />
+
+        <button @click="onClick">
+            X
+        </button>
     </div>
 </template>
 
@@ -23,6 +27,12 @@ export default {
                 'alert',
                 this.variant ? `alert-${this.variant}` : ''
             ]
+        }
+    },
+    methods: {
+        onClick() {
+            console.log('clicou');
+            this.$emit('close');
         }
     }
 }
