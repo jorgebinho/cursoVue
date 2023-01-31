@@ -1,6 +1,8 @@
 <template>
   <HeaderVue v-show="showHeader"/>
 
+  <ComputedProperties />
+  <hr>
   <EventosVue />
   <hr>
   <TwoWayBinding />
@@ -23,6 +25,7 @@ import DiretivaBinding from './components/DiretivaBinding.vue';
 import AtributoClass from './components/AtributoClass.vue';
 import TwoWayBinding from './components/TwoWayBinding.vue';
 import EventosVue from './components/EventosVue.vue';
+import ComputedProperties from './components/ComputedProperties.vue';
 
 export default {
     name: 'App',
@@ -33,7 +36,8 @@ export default {
       DiretivaBinding,
       AtributoClass,
       TwoWayBinding,
-      EventosVue
+      EventosVue,
+      ComputedProperties
     },
     data() {
       return {
