@@ -1,6 +1,8 @@
 <template>
   <HeaderVue v-show="showHeader"/>
 
+  <ObservadoresWatch />
+  <hr>
   <ComputedProperties />
   <hr>
   <EventosVue />
@@ -26,6 +28,7 @@ import AtributoClass from './components/AtributoClass.vue';
 import TwoWayBinding from './components/TwoWayBinding.vue';
 import EventosVue from './components/EventosVue.vue';
 import ComputedProperties from './components/ComputedProperties.vue';
+import ObservadoresWatch from './components/ObservadoresWatch.vue';
 
 export default {
     name: 'App',
@@ -37,7 +40,8 @@ export default {
       AtributoClass,
       TwoWayBinding,
       EventosVue,
-      ComputedProperties
+      ComputedProperties,
+      ObservadoresWatch
     },
     data() {
       return {
