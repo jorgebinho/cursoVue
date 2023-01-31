@@ -11,6 +11,8 @@
     Conteúdo adicional do Header...
   </HeaderVue>
 
+  <BaseAlert :variant=variant>Seu formulário foi enviado com sucesso!</BaseAlert>
+  <hr>
   <BaseCard />
   <hr>
   <LifeCycle />
@@ -45,6 +47,7 @@ import ComputedProperties from './components/ComputedProperties.vue';
 import ObservadoresWatch from './components/ObservadoresWatch.vue';
 import LifeCycle from './components/LifeCycle.vue';
 import BaseCard from './components/BaseCard.vue';
+import BaseAlert from './components/BaseAlert.vue'
 
 export default {
     name: 'App',
@@ -59,11 +62,13 @@ export default {
       ComputedProperties,
       ObservadoresWatch,
       LifeCycle,
-      BaseCard
+      BaseCard,
+      BaseAlert
     },
     data() {
       return {
-        showHeader: true
+        showHeader: true,
+        variant: "success",
       }
     }
 }
