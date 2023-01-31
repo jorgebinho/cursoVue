@@ -1,6 +1,8 @@
 <template>
   <HeaderVue v-show="showHeader"/>
 
+  <LifeCycle />
+  <hr>
   <ObservadoresWatch />
   <hr>
   <ComputedProperties />
@@ -29,6 +31,7 @@ import TwoWayBinding from './components/TwoWayBinding.vue';
 import EventosVue from './components/EventosVue.vue';
 import ComputedProperties from './components/ComputedProperties.vue';
 import ObservadoresWatch from './components/ObservadoresWatch.vue';
+import LifeCycle from './components/LifeCycle.vue';
 
 export default {
     name: 'App',
@@ -41,7 +44,8 @@ export default {
       TwoWayBinding,
       EventosVue,
       ComputedProperties,
-      ObservadoresWatch
+      ObservadoresWatch,
+      LifeCycle
     },
     data() {
       return {
