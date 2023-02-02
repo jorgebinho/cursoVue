@@ -1,5 +1,4 @@
-
-# app
+# cursovue
 
 ## Project setup
 ```
